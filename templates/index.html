@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>얼굴 인식</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <script src="static/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="subject">신입사원으로 살아남기</h1>
+        <p id="description">부장님의 표정을 보여주세요!</p>
+    </header>
+    <main>
+        <div id="Pack">
+            <img class="img" src="../static/facedata/face1.png" alt="얼굴 이미지">
+            <div id="info">
+                <img id="emotion" src="../static/src/wait.svg" alt="표정 이미지">
+            </div>
+        </div>
+        <div id="btnPack">
+            <button class="btn" id="upload-face">업로드</button>
+            <button class="btn" id="capture-face">카메라</button>
+            <button id="expBtn">표정 검출</button>
+        </div>
+    </main>
+</body>
+</html>

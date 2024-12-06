@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'PretendardSM';
+    src: url('fonts/Pretendard-SemiBold.otf') format('opentype'); /* 폰트 파일 경로 설정 */
+}
+@font-face {
+    font-family: 'PretendardRG';
+    src: url('fonts/Pretendard-Regular.otf') format('opentype'); /* Regular 폰트 */
+}
+@font-face {
+    font-family: 'PretendardMD';
+    src: url('fonts/Pretendard-Medium.otf') format('opentype'); /* 상대 경로 사용 */
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; /* 원하는 배경색으로 변경 */
+    margin: 0; /* 기본 여백 제거 */
+}
+
+#subject {
+    font-family: PretendardSM, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0; /* 모든 방향의 패딩 제거 */
+}
+#description {
+    font-family: PretendardRG, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    margin: 0; /* 모든 방향의 여백 제거 */
+    padding: 0; /* 모든 방향의 패딩 제거 */
+}
+
+#Pack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+.img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: #f0f0f0; /* 이미지가 없을 때 배경색 */
+    object-fit: cover; /* 이미지가 있을 때 크기에 맞게 조정 */
+    margin-right: 10px;
+}
+#info {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: rgb(238, 238, 238);
+    margin-left: 10px;
+}
+#emotion{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#btnPack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0; /* 모든 방향의 여백 제거 */
+    padding: 0; /* 모든 방향의 패딩 제거 */
+}
+#margin {
+    width: 300px;
+    height: 1;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: 20px;
+}
+.btn {
+    font-family: PretendardRG, sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:active {
+    background-color: #c7c7c7;
+}
+#expBtn{
+    font-family: PretendardRG, sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 22px;
+}
+#expBtn:active {
+    background-color: #c7c7c7;
+}
+#upload-face {
+    text-align: center;
+    margin-top: 1em;
+    margin-right: 12px;
+}
+#capture-face {
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 12px;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    #subject {
+        font-size: 1.5em;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 200px;
+    }
+    #info {
+        width: 100%;
+        max-width: 150px;
+    }
+    #expBtn {
+        width: 100%;
+        max-width: 150px;
+    }
+    #emotion{
+        width: 100%;
+        max-width: 150px;
+    }
+    .btn {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    #subject {
+        font-size: 1.2em;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    #info {
+        width: 100%;
+        max-width: 150px;
+    }
+    #emotion{
+        width: 100%;
+        max-width: 150px;
+    }
+
+    #expBtn {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    
+
+    .btn {
+        width: 80px;
+    }
+}
