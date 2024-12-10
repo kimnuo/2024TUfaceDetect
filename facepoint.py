@@ -49,6 +49,6 @@ def extract_landmarks(imgPath, csvPath, predictor_path="shape_predictor_68_face_
     print(f"Landmarks have been saved to {csvPath}")
 
 # Example usage
-"""imgPath = 'fdata/neutral'
-csvPath = 'output/neutral.csv'
-extract_landmarks(imgPath, csvPath)"""
+imgPath = 'fdata/happy'
+csvPath = 'output/happy.csv'
+extract_landmarks(imgPath, csvPath)
