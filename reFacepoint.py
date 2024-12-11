@@ -4,8 +4,8 @@ import os
 import numpy as np
 
 # Define the source CSV file and output directory
-csv_file = 'landmarks.csv'
-output_dir = 'output_images'
+csv_file = 'static\\facedata\\face.csv'
+output_dir = 'static'
 
 # Create the output directory if it doesn't exist
 if not os.path.exists(output_dir):
